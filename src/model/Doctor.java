@@ -1,4 +1,5 @@
-import javax.print.Doc;
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -15,7 +16,7 @@ public class Doctor extends User {
     }
 //Available Appointment
 
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name,email);
         System.out.println("El nombre de el doctor asignado es: " + name);
         this.speciality = speciality;
