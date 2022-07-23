@@ -1,8 +1,5 @@
 import model.*;
 
-import java.sql.SQLOutput;
-import java.util.Date;
-
 import static ui.UIMenu.showMenu;
 
 public class Main {
