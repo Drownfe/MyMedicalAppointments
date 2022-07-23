@@ -20,8 +20,6 @@ public class Doctor extends User {
 
     public Doctor(String name, String email){
         super(name,email);
-        System.out.println("El nombre de el doctor asignado es: " + name);
-        this.speciality = speciality;
     }
     //Comportamientos
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
