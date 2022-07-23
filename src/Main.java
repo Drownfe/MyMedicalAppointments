@@ -1,7 +1,6 @@
-import model.Doctor;
-import model.Patient;
-import model.User;
+import model.*;
 
+import java.sql.SQLOutput;
 import java.util.Date;
 
 public class Main {
@@ -16,6 +15,17 @@ public class Main {
         user.showDataUser();
         User userPa = new Patient("Anahi","ana@ana.com");
         userPa.showDataUser();
+
+        User user1 = new User("Anahi","ana@ana.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("Doctor");
+                System.out.println("Hospital: Cruz Verde");
+                System.out.println("Departamento: Geriatria");
+            }
+        };
+        user1.showDataUser();
+
         /*
         for (model.Doctor.AvailableAppointment aA: myDoctor.getAvailableAppointments()) {
             System.out.println(aA.getDate() + " " + aA.getTime());
